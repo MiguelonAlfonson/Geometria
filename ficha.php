@@ -1,7 +1,7 @@
 <?php
-require_once '../controlador/controlador.php';
-require_once '../clases/BD.php';
-require_once '../clases/usuario.php';
+require_once 'controlador.php';
+require_once 'BD.php';
+require_once 'usuario.php';
 
 
 class fichas {
