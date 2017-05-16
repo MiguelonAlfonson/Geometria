@@ -1,10 +1,8 @@
 <?php
-require_once '../clases/BD.php';
-require_once '../clases/ficha.php';
-require_once '../clases/usuario.php';
- 
-
-
+require_once 'BD.php';
+require_once 'ficha.php';
+require_once 'usuario.php';
+/* */ 
 if (!isset($_REQUEST["action"])) {
     die("No hay accion");
 }
