@@ -5,7 +5,6 @@ require_once 'usuario.php';
 
 
 class BD {
-
 private $instancia;
 private $conexion;
 
@@ -70,6 +69,3 @@ public function mensaje() {
 }
 
 }
-
-?>
-
