@@ -50,15 +50,14 @@ $(document).ready(function() {
 </div>
 </div>
 
-<? if (isset($_SESSION["aviso"])) { ?>
+<?php if (isset($_SESSION["aviso"])) { ?>
+<h2><?php = $_SESSION["aviso"] ?></h2>
 
-<h2><?= $_SESSION["aviso"] ?></h2>
-
-<? $_SESSION["aviso"] = null; } ?>
+<?php $_SESSION["aviso"] = null; } ?>
 
 <br><a href="http://www.w3schools.com/default.asp" target="nueva">
 <img src="fondos_imgen/120px-W3C_HTML5_certified.png" alt="Guia" title="Guia"/></a></br>
-<? if (isset($_POST["nombre"]) && isset($_POST["email"]) && isset($_POST["direccion"]) 
+<?php if (isset($_POST["nombre"]) && isset($_POST["email"]) && isset($_POST["direccion"]) 
     && isset($_POST["edad"]) && isset($_POST["contraseña"])) { 
     $alta_usuario = new usuarios(null, $_POST["nombre"], 
         $_POST["email"], $_POST["direccion"], 
